@@ -1,0 +1,32 @@
+/******************************/
+/* PROGRAMA TRES              */
+/* ALEXIS DE LOS RIOS         */  
+/* 12 DE JULIO 2013           */
+/* AREA DEL CIRCUNFERENCIA    */
+/******************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+int main()
+{	
+	float radio,area;
+	
+	printf("\t	Calculo del Area de una CIRCUNFERENCIA \n");
+	printf("\t	============================ \n");
+	printf("INGRESE RADIO:");
+	scanf("%f",&radio);
+	
+	if(radio>0)
+	{
+	//calcula el area
+	area= 3.1416*pow(radio,2);//pow en libreria math.h
+	printf("\n EL AREA ES %f",area);
+	}
+	else
+		printf("ERROR:no se permiten numeros menor a 0");
+	getch();
+}
+
