@@ -1,0 +1,32 @@
+/*************************/
+/* PROGRAMA UNO           */
+/* ALEXIS DE LOS RIOS    */	
+/* 12 DE JULIO 2013      */
+/* AREA DEL TRIANGULO    */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+int main()
+{	
+	float base,altura,area;
+	
+	printf("\t	Calculo del Area del Triangulo\n");
+	printf("\t	===============================\n");
+	printf("INGRESE BASE:");
+	scanf("%f",&base);
+	printf("INGRESE ALTURA:");
+	scanf("%f",&altura);
+	if(base>0 && altura>0)
+	{
+	//calcula el area
+	area=(base*altura)/2;
+	printf("\n EL AREA ES %f",area);
+	}
+	else
+		printf("no se permiten numeros menor a 0");
+	getch();
+}
+
