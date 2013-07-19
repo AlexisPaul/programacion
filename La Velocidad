@@ -1,0 +1,34 @@
+/*************************/
+/* PROGRAMA CUATRO       */
+/* ALEXIS DE LOS RIOS    */  
+/* 15 DE JULIO 2013      */
+/* LA VELOCIDAD          */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{ 
+	int dist,tiempo,Vel;
+
+	printf("\t	Calculo de LA VELOCIDAD\n");
+	printf("\t	=======================\n");
+	printf("INGRESE SU DISTANCIA EN KM =  ");//consideramos una distancia en km
+	scanf("%d",&dist);
+	printf("\nINGRESE SU TIEMPO EN MIN=  ");//consideramos un tiempo en minutos
+	scanf("%d",&tiempo);
+	if(dist>=0 && tiempo>=0)// no permite numeros negativos en el calculo
+		{
+		//calcula la velocidad
+		Vel=dist/tiempo ; 
+		}
+	else 
+		printf("ERROR");
+
+	printf("\nSU VELOCIDAD ES %d KM/MIN",Vel);
+
+	getch();
+}
