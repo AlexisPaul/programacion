@@ -1,0 +1,33 @@
+/*************************/
+/* PROGRAMA DOS           */
+/* ALEXIS DE LOS RIOS    */	
+/* 12 DE JULIO 2013      */
+/* AREA DEL CUADRADO     */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{	
+	float lado,area;
+	
+	printf("\t	Calculo el Area del CUADRADO\n");
+	printf("\t	============================ \n");
+	printf("INGRESE LADO:");
+	scanf("%f",&lado);
+	
+	if(lado>0)
+	{
+	//calcula el area
+	area=(lado*lado);
+	printf("\n EL AREA ES %f",area);
+	}
+	else
+		printf("ERROR:no se permiten numeros menor a 0");
+	getch();
+}
+
+
+
