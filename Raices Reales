@@ -1,0 +1,38 @@
+/*************************/
+/* PROGRAMA SIETE        */
+/* ALEXIS DE LOS RIOS    */  
+/* 15 DE JULIO 2013      */
+/* RAICES REALES */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+
+void main()
+{ 
+	float a,b,c,D,X1,X2;
+
+	printf("\t	DETERMINAR RAICES REALES\n");
+	printf("\t	========================\n");
+	printf("INGRESE VALORES = \n");
+	scanf("%f",&a);
+	scanf("%f",&b);
+	scanf("%f",&c);
+	D=(b*b)-(4*a*c);
+	if(D>=0)
+	{
+		X1= (-(b)+sqrt(D))/2*a;
+		X2= (-(b)-sqrt(D))/2*a;
+		printf("\nSUS RAICES REALES SON:\n PARA x1=%f\n PARA x2=%f",X1,X2);
+
+	}
+	else 
+		printf("\nNO EXISTE RAICES REALES");
+
+
+		
+	getch();
+}
