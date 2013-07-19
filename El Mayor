@@ -1,0 +1,35 @@
+/*************************/
+/* PROGRAMA NUEVE        */
+/* ALEXIS DE LOS RIOS    */  
+/* 15 DE JULIO 2013      */
+/*  EL MAYOR              */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{ 
+	int A,B,C;
+	printf("\t CALCULO DEL MAYOR NUMERO\n");
+	printf("\t =========================\n");
+	printf("INGRESE VALORES:\n");
+	scanf("%d",&A);
+	scanf("%d",&B);
+	scanf("%d",&C);
+	if(A>B)
+	{
+		if(A>C)
+			printf("EL MAYOR ES %d",A);
+		else
+			printf("EL MAYOR ES %d",C);
+	}
+	else
+		if(B>C)
+			printf("EL MAYOR ES %d",B);
+		else
+			printf("EL MAYOR ES %d",C);
+	getch();
+}
