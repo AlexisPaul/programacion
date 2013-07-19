@@ -1,0 +1,42 @@
+/*************************/
+/* PROGRAMA CINCO        */
+/* ALEXIS DE LOS RIOS    */  
+/* 15 DE JULIO 2013      */
+/* PORCENTAJE RESPECTIVO */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{ 
+	int a,b,c;// tomo en cuenta qe los numeros ingresads son entero
+	float PORA,PORB,PORC,SUMA; // y mis porcentajes en real
+
+	printf("\t	Calculo DEL PORCENTAJE TOTAL DE 3 NUMEROS\n");
+	printf("\t	=========================================\n");
+	printf("INGRESE PRIMER VALOR = ");
+	scanf("%d",&a);
+	printf("\nINGRESE SEGUNDO VALOR = ");
+	scanf("%d",&b);
+	printf("\nINGRESE TERCER VALOR = ");
+	scanf("%d",&c);
+
+	if(a>=0 && b>=0 && c>=0)// no permite numeros negativos en el calculo
+		{
+		//calcula la SUMATORIA Y EL PORCENTAJE TOTAL
+		SUMA=a+b+c; 
+		printf("la suma es %d",SUMA);
+		PORA = a*100/SUMA;
+		PORB= b*100/SUMA;
+		PORC= c*100/SUMA;
+		}
+	else 
+		printf("ERROR NO SE PERMITEN NEGATIVOS");
+
+	printf("\nEL PORCENTAJE RESPECTIVO ES: V1=%f, V2=%f,V3=%f",PORA,PORB,PORC);
+	
+	getch();
+}
