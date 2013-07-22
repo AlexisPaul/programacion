@@ -1,0 +1,34 @@
+/*************************/
+/* PROGRAMA 21           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* RANGO DE UNA SUMA     */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t RANGO DE SUMA PARES\n");
+	printf("\t =================== \n");
+	int n,m,S;
+	S=0;
+	printf("SUMA DE PARES DEL NUMERO:");
+	scanf("%d",&n);
+	printf("\nHASTA EL NUMERO: ");
+	scanf("%d",&m);
+	while(n<=m)
+	{
+		if(n%2==0)
+		{
+			S = S + n;
+		}
+		n=n+1;
+	}
+	printf("LA SUMATORIA ES: %d",S);
+
+	_getch();
+}
