@@ -1,0 +1,31 @@
+/*************************/
+/* PROGRAMA 16           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* DECIMAL A OCTAL       */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t CAlCULO DE BASE DECIMAL A OCTAL\n");
+	printf("\t ================================\n");
+	int N, S, exp, dig;
+	printf("INGRESE VALOR: \n");
+	scanf_s("%d",&N);
+	S=0;
+	exp=0;
+	while(N>0)
+	{
+		dig=N%8;
+		S = S + int (pow(10.0,exp) ) * dig;
+		exp=exp+1;
+		N=int(N/8);
+	}
+	printf("\nEl numero en base OCTAL es %d;",S);
+	_getch();
+}
