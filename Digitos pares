@@ -1,0 +1,37 @@
+/*************************/
+/* PROGRAMA 19           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* DIGITOS PARES         */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t CAlCULO DEL NUMERO DE DIGITOS PARES\n");
+	printf("\t =====================================\n");
+	int N, S, dig;
+	printf("INGRESE VALOR: \n");
+	scanf_s("%d",&N);
+	S=0;
+	printf("LOS DIGITOS PARES SON:\n");
+	while(N>0)
+	{
+		dig=N%10;
+		if( dig % 2 == 0 )
+		{	
+			printf("%d, ",dig);
+			S++;
+		}
+
+		N = int( N / 10);
+
+	}
+
+	printf("\nEl NUMERO DE DIGITOS PARES ES: %d",S);
+	_getch();
+}
