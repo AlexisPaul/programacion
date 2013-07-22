@@ -1,0 +1,32 @@
+/*************************/
+/* PROGRAMA 17           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* NUMERO DE DIGITOS     */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t CAlCULO DEL NUMERO DE DIGITOS\n");
+	printf("\t ==============================\n");
+	int N, S, dig;
+	printf("INGRESE VALOR: \n");
+	scanf_s("%d",&N);
+	S=0;
+	
+	while(N>0)
+	{
+		dig=N%10;
+
+		S++;
+
+		N=int(N/10);
+	}
+	printf("\nEl NUMERO DE DIGITOS ES: %d",S);
+	_getch();
+}
