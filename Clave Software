@@ -1,0 +1,32 @@
+/*************************/
+/* PROGRAMA 20           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* CLAVE DE SOFTWARE     */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t CLAVE DEL SOFTWARE\n");
+	printf("\t ================== \n");
+	int clave, con;
+	con = 0;
+	do
+	{
+		printf("INGRESE CLAVE(intento: %d) : ",con+1);
+		scanf_s("%d",&clave);
+		con++;
+
+	}while((clave != 78509594) && (con<3));
+	if(clave==78509594)
+		printf("CLAVE ACEPTADA");
+	else
+		printf("CLAVE ERRONEA, BLOQUEO DE SISTEMA");
+
+	_getch();
+}
