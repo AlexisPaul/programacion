@@ -1,0 +1,34 @@
+/*************************/
+/* PROGRAMA 23           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* FIBONACCI             */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t FIBONACCI\n");
+	printf("\t ========== \n");
+	int n, t1, cont, t, t2;
+	printf("INTRODUCIR NUMERO DE TERMINOS:   ");
+	scanf_s("%d",&n);
+	t1=0;
+	t2=1;
+	cont=0;
+	while(cont<n)
+	{
+		t= t1 + t2;
+		printf("\nEL TERMINO %d es: %d \n",cont+1,t);
+		cont++;
+		t1=t2;
+		t2=t;
+
+	}
+	
+	_getch();
+}
