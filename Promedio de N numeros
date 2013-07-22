@@ -1,0 +1,35 @@
+/*************************/
+/* PROGRAMA 22           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* PROMEDIO DE N NUMEROS */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t PROMEDIO\n");
+	printf("\t ======== \n");
+	int N, cont, a, Prom, S;
+	printf("INTRODUCIR N NUMEROS:\n");
+	scanf("%d",&N);
+	cont=0;
+	S=0;
+	printf("PROMEDIO DE %d NUMEROS:\n",N);
+	while(cont<N)
+	{
+		scanf("%d",&a);
+		S= S + a;
+		cont++;
+
+	}
+	Prom = S / N;
+	
+	printf(" EL PROMEDIO ES %d",Prom);
+
+	_getch();
+}
