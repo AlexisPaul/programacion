@@ -1,0 +1,37 @@
+/*************************/
+/* PROGRAMA 18           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* DIGITOS PRIMOS       */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t CAlCULO DEL NUMERO DE DIGITOS PRIMOS\n");
+	printf("\t =====================================\n");
+	int N, S, dig;
+	printf("INGRESE VALOR: \n");
+	scanf_s("%d",&N);
+	S=0;
+	printf("LOS DIGITOS PRIMOS SON:\n");
+	while(N>0)
+	{
+		dig=N%10;
+		if( (dig == 1 ) ||(dig == 2 ) || (dig == 3 ) || (dig == 5 ) || (dig == 7 ) || (dig == 9 )  )
+		{	
+			printf("%d, ",dig);
+			S++;
+		}
+
+		N = int( N / 10);
+
+	}
+
+	printf("\nEl NUMERO DE DIGITOS PRIMOS ES: %d",S);
+	_getch();
+}
