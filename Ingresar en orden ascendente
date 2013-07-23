@@ -1,0 +1,55 @@
+/******************************************/
+/* PROGRAMA 28                            */
+/* ALEXIS DE LOS RIOS                     */  
+/* 17 DE JULIO 2013                       */
+/* INTRODUCIR EN ORDEN ASCENDENTE         */
+/******************************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t INGRESO DE NUMEROS EN ORDEN ASCENDETE\n");
+	printf("\t ====================================\n");
+	int m,n,l;
+	printf("INGRESE  primer NUMERO: ");
+	scanf("%d",&l);
+	printf("\nINGRESE segundo NUMERO: ");
+	scanf("%d",&m);
+	printf("\nINGRESE tercer NUMERO: ");
+	scanf("%d",&n);
+	if(l<m)
+	{
+		if(l<n)
+		{
+			if(m<n)
+			{ printf("\nLos numeros ingresados estaban ordenados");
+			}
+			else
+				printf("\nEL ORDEN ES %d, %d, %d",l,n,m);
+		}
+		else
+				printf("\nEL ORDEN ES %d, %d, %d",n,l,m);
+	}
+	else
+	{
+		if(m<n)
+		{
+			if(l<n)
+				printf("\nEL ORDEN ES %d, %d, %d",m,l,n);
+
+			else
+				printf("\nEL ORDEN ES %d, %d, %d",m,n,l);
+		}
+		else
+				printf("\nEL ORDEN ES %d, %d, %d",n,m,l);
+		
+
+	}
+	
+
+	_getch();
+}
