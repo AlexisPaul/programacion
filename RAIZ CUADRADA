@@ -1,0 +1,25 @@
+/******************************************/
+/* PROGRAMA 27                            */
+/* ALEXIS DE LOS RIOS                     */  
+/* 17 DE JULIO 2013                       */
+/* RAIZ CUADRADA                          */
+/******************************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t RAIZ CUADRADA\n");
+	printf("\t ===============\n");
+	float m,n;
+	printf("INGRESE NUMERO QUE DESEA AVERIGUAR RAIZ: ");
+	scanf("%f",&n);
+	m = sqrt(n);	 
+	
+	printf("Su Raiz ES %f",m);
+
+	_getch();
+}
