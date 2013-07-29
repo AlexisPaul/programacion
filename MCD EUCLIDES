@@ -1,0 +1,34 @@
+/*************************/
+/* PROGRAMA 24           */
+/* ALEXIS DE LOS RIOS    */  
+/* 17 DE JULIO 2013      */
+/* MCD de Euclides       */
+/*************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t MCD DE EUCLIDES\n");
+	printf("\t ================ \n");
+	int a, b, r;
+	printf("INTRODUCIR PRIMER NUMERO:   ");
+	scanf_s("%d",&a);
+	printf("\nINTRODUCIR SEGUNDO NUMERO:   ");
+	scanf_s("%d",&b);
+	r=1;
+	while(r!=0)
+	{
+		r = a % b;
+		a = b;
+		b = r;
+		
+		
+	}
+	printf("\nEL MCD ES: %d",a);
+
+	_getch();
+}
