@@ -1,0 +1,29 @@
+/******************************************/
+/* PROGRAMA 29                            */
+/* ALEXIS DE LOS RIOS                     */  
+/* 17 DE JULIO 2013                       */
+/* FACTORIAL                             */
+/******************************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t FACTORIAL\n");
+	printf("\t ==========\n");
+	int n, fac, i;
+	printf("INGRESE NUMERO QUE DESEA AVERIGUAR su FACTORIAL: ");
+	scanf_s("%d",&n);
+	fac = 1;
+	for(i=1; i<=n; i++)
+	{
+		fac = fac * i;
+	}
+	
+	printf("Su FACTORIAL ES %d",fac);
+
+	_getch();
+}
