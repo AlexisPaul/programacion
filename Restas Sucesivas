@@ -1,0 +1,42 @@
+/******************************************/
+/* PROGRAMA 26                            */
+/* ALEXIS DE LOS RIOS                     */  
+/* 17 DE JULIO 2013                       */
+/* DIVIDIR CON RESTAS SUCESIVAS           */
+/******************************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t DIVISION CON RESTAS SUCESIVAS\n");
+	printf("\t =============================\n");
+	int n,m,cont,res,coc;
+	printf("INGRESE NUMERO: ");
+	scanf("%d",&m);
+	printf("INGRESE NUMERO POR CUAL QUIERE DIVIDIRLO: ");
+	scanf("%d",&n);
+	if(m>n)
+		
+	{
+		cont=0;
+		while((m-n)>0)
+		{
+			res = m - n;
+			m = res ;
+			cont= cont + 1;
+		}
+		coc = cont;
+		res = m;
+		printf(" EL Cociente ES %d",coc);
+		printf(" EL resto  ES %d",res);
+	}
+	else
+	
+		printf(" INGRESO MAL SUS NUMEROS");
+
+	_getch();
+}
