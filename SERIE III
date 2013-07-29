@@ -1,0 +1,35 @@
+/******************************************/
+/* SERIE III                               */
+/* ALEXIS DE LOS RIOS                     */  
+/* 21 DE JULIO 2013                       */
+/******************************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+	printf("\t SERIE III\n");
+	printf("\t =========\n");
+	float x, fac, S, i, n, signo;
+	printf("INGRESE NUMERO X: ");
+	scanf_s("%f",&x);
+	printf("INGRESE NUMERO n: ");
+	scanf_s("%f",&n);
+	fac = 1;
+	S = 0;
+	signo = 1;
+	for(i=0; i<n; i++)
+	{
+		S = S + signo * (pow(x,i) / fac );
+		printf("Serie =%f X %f / %f\n", signo, i, fac);
+		fac = fac * (i+1);
+		signo = signo * -1;
+	}
+	
+	printf("\nLa suma de Su serie es %f",S);
+
+	_getch();
+}
