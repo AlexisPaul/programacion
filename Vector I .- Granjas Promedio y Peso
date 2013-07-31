@@ -1,0 +1,68 @@
+/******************************************/
+/* VECTORES I                             */
+/* ALEXIS DE LOS RIOS                     */  
+/* 28 DE JULIO 2013                       */
+/******************************************/ 
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+#define Nmax 100
+
+void cargarCalidad(int Can[Nmax], float Pe[Nmax],int n);
+void calcularPromedio(int Can[Nmax],float Pe[Nmax], float Prom[Nmax],int n);
+void Imprimir(float Prom[Nmax], float Pe[Nmax],int n);
+
+
+
+void main()
+{
+	printf("\t PROMEDIO, CALIDAD DE GRANJAS\n");
+	printf("\t ============================\n");
+	int n, Can[Nmax];
+	float Pe[Nmax], Prom[Nmax];
+	printf("INGRESE EL NUMERO DE GRANJAS: ");
+	scanf_s("%d",&n);
+	cargarCalidad( Can, Pe, n);
+	calcularPromedio(Can, Pe, Prom, n);
+	Imprimir(Prom,Pe, n);
+
+
+	_getch();
+}
+
+void cargarCalidad(int Can[Nmax], float Pe[Nmax],int n)
+{
+	int i;
+	for(i=0; i<n; i++)
+	{
+		printf("\nINGRESE LA CANTIDAD DE HUEVOS QUE PONE SU GRANJA %d:  \n ", i+1);
+		scanf("%d",&Can[i]);
+		printf("INGRESE EL PESO DE LOS HUEVOS:   \n");
+		scanf("%f",&Pe[i]);
+
+	}
+}
+
+void calcularPromedio(int Can[Nmax],float Pe[Nmax], float Prom[Nmax],int n)
+{
+	int i;
+	for(i=0; i<n; i++)
+	{
+		Prom[i] = Pe[i] / Can[i];
+	}
+}
+
+
+void Imprimir(float Prom[Nmax], float Pe[Nmax],int n)
+{
+	int i;
+	printf("\nGRANJA        PESO               PROMEDIO\n");
+	printf("======        ====              ==========\n");
+	for(i=0; i<n; i++)
+	{
+		printf(" %d            %f            %f   \n", i+1,Pe[i],Prom[i]);
+	}
+}
